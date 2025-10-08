@@ -1,0 +1,37 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class ReverseArray {
+    public static void main(String[] args) {
+        System.out.println("enter the no of elements in an array");
+        Scanner sc =new Scanner(System.in);
+        int n =sc.nextInt();
+        int arr[]=new int[n];
+        System.out.println("enter the elements of array");
+        for(int i =0; i<n; i++){
+            
+            
+            arr[i] = sc.nextInt();
+            
+        }
+        System.out.println("these are the elements entered");
+        for(int i = 0; i<n; i++){
+            System.out.println(arr[i]);
+            
+        }
+        int count = practise(arr);
+        System.out.println("the count is "+count);
+
+    }
+    public static int practise(int arr[]){
+        int count =0;
+        for (int i =0; i<arr.length; i++){
+            if (arr[i]%7==0){
+                count+=1;
+            }
+            
+        }
+        return count;
+        
+    }
+}
